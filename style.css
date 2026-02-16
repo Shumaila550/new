@@ -11,6 +11,29 @@ body{
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
+.particles{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  overflow:hidden;
+}
+
+.particles span{
+  position:absolute;
+  display:block;
+  width:6px;
+  height:6px;
+  background:#38bdf8;
+  opacity:0.3;
+  border-radius:50%;
+  animation:float 20s linear infinite;
+}
+
+@keyframes float{
+  from{transform:translateY(100vh) scale(0)}
+  to{transform:translateY(-10vh) scale(1)}
+}
+
 *{margin:0;padding:0;box-sizing:border-box}
 body{
   font-family:'Poppins',sans-serif;
