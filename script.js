@@ -35,5 +35,15 @@ window.addEventListener("scroll",()=>{
     if(top<trigger){
       span.style.width=span.dataset.width;
     }
+    // create floating particles
+const container=document.querySelector(".particles");
+for(let i=0;i<40;i++){
+  const dot=document.createElement("span");
+  dot.style.left=Math.random()*100+"%";
+  dot.style.animationDuration=(10+Math.random()*20)+"s";
+  dot.style.opacity=Math.random();
+  container.appendChild(dot);
+}
+
   });
 });
