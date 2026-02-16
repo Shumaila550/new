@@ -1,14 +1,14 @@
 body{
   margin:0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:Segoe UI, sans-serif;
   background:#0f172a;
-  color:#fff;
+  color:white;
 }
 
 .nav{
   display:flex;
   justify-content:space-between;
-  padding:20px 8%;
+  padding:18px 8%;
   background:#020617;
   position:sticky;
   top:0;
@@ -16,8 +16,8 @@ body{
 
 .nav ul{
   display:flex;
-  gap:25px;
   list-style:none;
+  gap:25px;
 }
 
 .nav a{
@@ -34,17 +34,15 @@ body{
   text-align:center;
 }
 
-.hero span{
-  color:#38bdf8;
-}
+.hero span{color:#38bdf8;}
 
-button{
+.btn{
+  margin-top:20px;
   padding:12px 22px;
-  border:none;
   background:#38bdf8;
   color:#000;
-  margin-top:20px;
-  cursor:pointer;
+  text-decoration:none;
+  border-radius:6px;
 }
 
 .section{
@@ -52,19 +50,17 @@ button{
   text-align:center;
 }
 
-.dark{
-  background:#020617;
-}
+.dark{background:#020617;}
 
-.cards{
+.grid{
   display:flex;
+  justify-content:center;
   gap:25px;
   flex-wrap:wrap;
-  justify-content:center;
 }
 
 .card{
-  background:#0f172a;
+  background:#020617;
   padding:25px;
   border-radius:10px;
   width:250px;
@@ -73,5 +69,26 @@ button{
 
 .card:hover{
   transform:translateY(-10px);
-  box-shadow:0 10px 20px rgba(0,0,0,0.4);
+  box-shadow:0 15px 25px rgba(0,0,0,0.5);
+}
+
+.skill{margin:20px auto; width:60%; text-align:left;}
+
+.bar{
+  height:8px;
+  background:#111;
+  border-radius:10px;
+}
+
+.bar span{
+  display:block;
+  height:100%;
+  background:#38bdf8;
+  border-radius:10px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
 }
