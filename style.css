@@ -1,3 +1,16 @@
+body{
+  font-family:'Poppins',sans-serif;
+  color:white;
+  background:linear-gradient(-45deg,#020617,#0f172a,#020617,#1e293b);
+  background-size:400% 400%;
+  animation:bgMove 12s ease infinite;
+}
+
+@keyframes bgMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
 *{margin:0;padding:0;box-sizing:border-box}
 body{
   font-family:'Poppins',sans-serif;
